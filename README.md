@@ -48,6 +48,9 @@ viewTree(root)
 ```
 
 After running the code, the binary tree will be rendered and saved as an image (`binary_tree.png`) in your working directory.
+This will show:
+![image](https://github.com/user-attachments/assets/ed6250bc-d3f5-44cc-b18f-a79120872b8e)
+
 
 ---
 
