@@ -29,21 +29,21 @@ def visualize_tree(root):
         if node.left:
             dot.edge(str(id(node)), str(id(node.left)))  # No label here
             add_nodes_edges(node.left)
-        else:
-            # Add gray "None" text with no background and no padding
-            dot.node(str(id(node)) + "_L", label="None", fontcolor="gray", style="solid", shape="plaintext", width="0.5", height="0.25", fontsize='10')
-            # Color the edge to the "None" node gray, reduce its width, and set the label color to gray
-            dot.edge(str(id(node)), str(id(node)) + "_L", color="gray", penwidth="0.5", fontcolor="gray")
+        # else:
+        #     # Add gray "None" text with no background and no padding
+        #     dot.node(str(id(node)) + "_L", label="None", fontcolor="gray", style="solid", shape="plaintext", width="0.5", height="0.25", fontsize='10')
+        #     # Color the edge to the "None" node gray, reduce its width, and set the label color to gray
+        #     dot.edge(str(id(node)), str(id(node)) + "_L", color="gray", penwidth="0.5", fontcolor="gray")
 
         # Add the right child
         if node.right:
             dot.edge(str(id(node)), str(id(node.right)))  # No label here
-            add_nodes_edges(node.right)
-        else:
-            # Add gray "None" text with no background and no padding
-            dot.node(str(id(node)) + "_R", label="None", fontcolor="gray", style="solid", shape="plaintext", width="0.5", height="0.25", fontsize='10')
-            # Color the edge to the "None" node gray, reduce its width, and set the label color to gray
-            dot.edge(str(id(node)), str(id(node)) + "_R", color="gray", penwidth="0.5", fontcolor="gray")
+        #     add_nodes_edges(node.right)
+        # else:
+        #     # Add gray "None" text with no background and no padding
+        #     dot.node(str(id(node)) + "_R", label="None", fontcolor="gray", style="solid", shape="plaintext", width="0.5", height="0.25", fontsize='10')
+        #     # Color the edge to the "None" node gray, reduce its width, and set the label color to gray
+        #     dot.edge(str(id(node)), str(id(node)) + "_R", color="gray", penwidth="0.5", fontcolor="gray")
 
     add_nodes_edges(root)
     return dot
