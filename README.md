@@ -39,8 +39,8 @@ class Node:
 # Example binary tree
 root = Node(1,
                 left=Node(2,
-                             left=TreeNode(4),
-                             right=TreeNode(5)),
+                             left = Node(4),
+                             right = Node(5)),
                 right=Node(3))
 
 # Visualize the tree
