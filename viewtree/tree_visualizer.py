@@ -7,6 +7,7 @@ def visualize_tree(root):
     Distinguishes left and right child nodes but does not display labels on the edges.
     :param root: The root node of the binary tree.
     """
+    print("Check")
     dot = Digraph()
     dot.attr(
         rankdir='TB',
