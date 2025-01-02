@@ -38,7 +38,7 @@ def visualize_tree(root):
         # Add the right child
         if node.right:
             dot.edge(str(id(node)), str(id(node.right)))  # No label here
-        #     add_nodes_edges(node.right)
+            add_nodes_edges(node.right)
         # else:
         #     # Add gray "None" text with no background and no padding
         #     dot.node(str(id(node)) + "_R", label="None", fontcolor="gray", style="solid", shape="plaintext", width="0.5", height="0.25", fontsize='10')
