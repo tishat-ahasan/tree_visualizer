@@ -50,8 +50,8 @@ def visualize_tree(root):
 
 def viewTree(root):
     print("ABCD")
-    # Visualize the tree
-    tree_visualization = visualize_tree(root)
-    # Render the tree as a PNG and display it inline
-    tree_visualization.render("binary_tree", format="png", cleanup=False)  # Save the PNG
-    display(Image(filename="binary_tree.png"))  # Display the PNG in the notebook
+    # # Visualize the tree
+    # tree_visualization = visualize_tree(root)
+    # # Render the tree as a PNG and display it inline
+    # tree_visualization.render("binary_tree", format="png", cleanup=False)  # Save the PNG
+    # display(Image(filename="binary_tree.png"))  # Display the PNG in the notebook
